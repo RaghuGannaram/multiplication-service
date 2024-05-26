@@ -11,7 +11,7 @@ docker container run \
 > --publish 9003:9003 \
 > --network calculation-microservices-network \
 > --env LOG_LEVEL=debug \
-> --mount type=bind,source="$(pwd)/Docker/logs",target=/app/logs \
+> --mount type=bind,source="$(pwd)/_docker/logs",target=/app/logs \
 > raghugannaram/multiplication-service:1.0.0
 
 ```
